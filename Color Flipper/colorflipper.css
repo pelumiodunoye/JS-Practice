@@ -32,6 +32,11 @@ body {
   justify-content: center;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .link {
   text-align: center;
   padding: 10px;
