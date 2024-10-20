@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="tabs.css" />
+  </head>
+  <body>
+    <div class="center-container">
+      <div class="tab-buttons">
+        <button id="account-btn" class="tab-btn active">Account</button>
+        <button id="password-btn" class="tab-btn">Password</button>
+      </div>
+
+      <!-- Account Section-->
+      <div id="account-section" class="tab-section">
+        <div class="account-container">
+          <div class="account-div1">
+            <h2>Account</h2>
+            <p>
+              Make changes to your account here. Click save when you're done.
+            </p>
+          </div>
+          <div class="account-div2">
+            <div class="div-a">
+              <label for="name">Name</label>
+              <input type="text" id="name" placeholder="Pedro Duarte" />
+            </div>
+            <div class="div-b">
+              <label for="username">Username</label>
+              <input type="text" id="username" placeholder="@pedro" />
+            </div>
+          </div>
+          <div class="account-div3">
+            <button>Save Changes</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Password Section -->
+      <div id="password-section" class="tab-section hidden">
+        <div class="password-container">
+          <div class="password-div1">
+            <h2>Password</h2>
+            <p>
+              Change your password here. After saving, you'll be logged out.
+            </p>
+          </div>
+          <div class="password-div2">
+            <div class="div-a">
+              <label for="current-password">Current Password</label>
+              <input type="password" id="current-password" />
+            </div>
+            <div class="div-b">
+              <label for="new-password">New Password</label>
+              <input type="password" id="new-password" />
+            </div>
+          </div>
+          <div class="password-div3">
+            <button>Save Password</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="tabs.js"></script>
+  </body>
+</html>
