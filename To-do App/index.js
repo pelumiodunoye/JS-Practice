@@ -16,6 +16,9 @@ addBtn.addEventListener("click", (event) => {
     removeBtn.addEventListener("click", () => {
       if (confirm("Are you sure you want to delete this task?")) {
         todoList.removeChild(newTask);
+        setTimeout(() => {
+          alert("Task Deleted!");
+        }, 0);
       }
     });
     newTask.appendChild(removeBtn);
