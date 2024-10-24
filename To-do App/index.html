@@ -7,13 +7,19 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <h1>To-do List</h1>
+    <div class="header-container">
+      <h1>To-do List</h1>
+
+      <label for="dark-mode-toggle">
+        Enable Dark mode
+        <input type="checkbox" id="dark-mode-toggle" />
+      </label>
+    </div>
     <form>
       <input type="text" id="input" placeholder="Enter a task" />
-      <input type="date" id="dueDate" placeholder="Enter due date" />
-      <!-- <input type="time" id="dueDate" placeholder="Enter due date" /> -->
+      <input type="date" id="dueDate" />
 
-      <button id="add-Btn">Add task</button>
+      <button id="add-Btn" class="darkBtn">Add task</button>
     </form>
     <ul id="todo-list"></ul>
 
